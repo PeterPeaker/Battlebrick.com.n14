@@ -1,0 +1,183 @@
+# Faction paint schemes inherit the complete Vertibird flight, seating, fuel,
+# MultiZ transfer, combat-drop, turret and repair behavior.  Only the RSI and
+# its stationary/rotor-animation states differ.
+
+- type: entity
+  parent: N14VehicleVertibird
+  id: N14VehicleVertibirdBoS
+  name: Brotherhood of Steel Vertibird
+  description: These heavy tilt-rotor aircrafts, rigged for short-range wasteland flight, are rare and valuable pre-war equipment. Proudly painted in the heraldry of the Brotherhood of Steel, it is a symbol of their strength and zeal.
+  suffix: Flyable, Wendover
+  components:
+  - type: Vertibird
+    groundedSpriteState: vertibird_bos
+    flyingSpriteState: vertibird_bos_flying
+  # #Misfits Fix - faction RSIs use faction-prefixed states; relist layers so the Base
+  # layer points at the faction state and the parent's Shadow layer is preserved.
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_bos.rsi
+    layers:
+    - sprite: _Nuclear14/Mobs/Robots/eyebot.rsi
+      state: shadow_eyebot
+      map: [ enum.VertibirdVisualLayers.Shadow ]
+      offset: 0, -1.8
+      scale: 8, 4
+      color: "#00000055"
+      visible: false
+    - state: vertibird_bos
+      map: [ enum.VertibirdVisualLayers.Base ]
+
+- type: entity
+  parent: N14VehicleVertibirdWreck
+  id: N14VehicleVertibirdBoSWreck
+  name: Grounded Brotherhood of Steel Vertibird
+  description: This grounded pre-war aircraft is still under maintenance, but it will soon dominate the skies once more. Proudly painted in the heraldry of the Brotherhood of Steel, it is a symbol of their strength and zeal.
+  suffix: Mapping
+  components:
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_bos.rsi
+    state: vertibird_bos
+
+- type: entity
+  parent: N14VehicleVertibird
+  id: N14VehicleVertibird509th
+  name: 509th Brotherhood of Steel Vertibird
+  description: These heavy tilt-rotor aircrafts, rigged for short-range wasteland flight, are rare and valuable pre-war equipment. Proudly painted in the heraldry of the 509th Chapter of the Brotherhood of Steel, it is a symbol of their conviction.
+  suffix: Flyable, Wendover
+  components:
+  - type: Vertibird
+    groundedSpriteState: vertibird_509th
+    flyingSpriteState: vertibird_509th_flying
+  # #Misfits Fix - faction RSIs use faction-prefixed states; relist layers so the Base
+  # layer points at the faction state and the parent's Shadow layer is preserved.
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_509th.rsi
+    layers:
+    - sprite: _Nuclear14/Mobs/Robots/eyebot.rsi
+      state: shadow_eyebot
+      map: [ enum.VertibirdVisualLayers.Shadow ]
+      offset: 0, -1.8
+      scale: 8, 4
+      color: "#00000055"
+      visible: false
+    - state: vertibird_509th
+      map: [ enum.VertibirdVisualLayers.Base ]
+
+- type: entity
+  parent: N14VehicleVertibirdWreck
+  id: N14VehicleVertibird509thWreck
+  name: Grounded 509th Brotherhood of Steel Vertibird
+  description: This grounded pre-war aircraft is still under maintenance, but it will soon dominate the skies once more. Proudly painted in the heraldry of the 509th Chapter of the Brotherhood of Steel, it is a symbol of their conviction.
+  suffix: Mapping
+  components:
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_509th.rsi
+    state: vertibird_509th
+
+- type: entity
+  parent: N14VehicleVertibird
+  id: N14VehicleVertibirdEnclave
+  name: Enclave Vertibird
+  description: These heavy tilt-rotor aircrafts, rigged for short-range wasteland flight, are rare and valuable pre-war equipment. The seal of the Enclave is prominent over its blackened shell, a symbol of America's past glory and wartime dominance.
+  suffix: Flyable, Wendover
+  components:
+  - type: Vertibird
+    groundedSpriteState: vertibird_enclave
+    flyingSpriteState: vertibird_enclave_flying
+  # #Misfits Fix - faction RSIs use faction-prefixed states; relist layers so the Base
+  # layer points at the faction state and the parent's Shadow layer is preserved.
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_enclave.rsi
+    layers:
+    - sprite: _Nuclear14/Mobs/Robots/eyebot.rsi
+      state: shadow_eyebot
+      map: [ enum.VertibirdVisualLayers.Shadow ]
+      offset: 0, -1.8
+      scale: 8, 4
+      color: "#00000055"
+      visible: false
+    - state: vertibird_enclave
+      map: [ enum.VertibirdVisualLayers.Base ]
+
+- type: entity
+  parent: N14VehicleVertibirdWreck
+  id: N14VehicleVertibirdEnclaveWreck
+  name: Grounded Enclave Vertibird
+  description: This grounded pre-war aircraft is still under maintenance, but it will soon dominate the skies once more. The seal of the Enclave is prominent over its blackened shell, a symbol of America's past glory and wartime dominance.
+  suffix: Mapping
+  components:
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_enclave.rsi
+    state: vertibird_enclave
+
+- type: entity
+  parent: N14VehicleVertibird
+  id: N14VehicleVertibirdNCR
+  name: NCR Vertibird
+  description: These heavy tilt-rotor aircrafts, rigged for short-range wasteland flight, are rare and valuable pre-war equipment. The flag of the New California Republic has been painted over its front, a symbol of the growing nation's ambition and influence.
+  suffix: Flyable, Wendover
+  components:
+  - type: Vertibird
+    groundedSpriteState: vertibird_ncr
+    flyingSpriteState: vertibird_ncr_flying
+  # #Misfits Fix - faction RSIs use faction-prefixed states; relist layers so the Base
+  # layer points at the faction state and the parent's Shadow layer is preserved.
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_ncr.rsi
+    layers:
+    - sprite: _Nuclear14/Mobs/Robots/eyebot.rsi
+      state: shadow_eyebot
+      map: [ enum.VertibirdVisualLayers.Shadow ]
+      offset: 0, -1.8
+      scale: 8, 4
+      color: "#00000055"
+      visible: false
+    - state: vertibird_ncr
+      map: [ enum.VertibirdVisualLayers.Base ]
+
+- type: entity
+  parent: N14VehicleVertibirdWreck
+  id: N14VehicleVertibirdNCRWreck
+  name: Grounded NCR Vertibird
+  description: This grounded pre-war aircraft is still under maintenance, but it will soon dominate the skies once more. The flag of the New California Republic has been painted over its front, a symbol of the growing nation's ambition and influence.
+  suffix: Mapping
+  components:
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_ncr.rsi
+    state: vertibird_ncr
+
+- type: entity
+  parent: N14VehicleVertibird
+  id: N14VehicleVertibirdVaultTec
+  name: Vault-Tec Vertibird
+  description: These heavy tilt-rotor aircrafts, rigged for short-range wasteland flight, are rare and valuable pre-war equipment. The logo of Vault-Tec has been stenciled over its body, a symbol of the pre-war corporation's influence over its own government.
+  suffix: Flyable, Wendover
+  components:
+  - type: Vertibird
+    groundedSpriteState: vertibird_vaulttec
+    flyingSpriteState: vertibird_vaulttec_flying
+  # #Misfits Fix - faction RSIs use faction-prefixed states; relist layers so the Base
+  # layer points at the faction state and the parent's Shadow layer is preserved.
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_vaulttec.rsi
+    layers:
+    - sprite: _Nuclear14/Mobs/Robots/eyebot.rsi
+      state: shadow_eyebot
+      map: [ enum.VertibirdVisualLayers.Shadow ]
+      offset: 0, -1.8
+      scale: 8, 4
+      color: "#00000055"
+      visible: false
+    - state: vertibird_vaulttec
+      map: [ enum.VertibirdVisualLayers.Base ]
+
+- type: entity
+  parent: N14VehicleVertibirdWreck
+  id: N14VehicleVertibirdVaultTecWreck
+  name: Grounded Vault-Tec Vertibird
+  description: This grounded pre-war aircraft is still under maintenance, but it will soon dominate the skies once more. The logo of Vault-Tec has been stenciled over its body, a symbol of the pre-war corporation's influence over its own government.
+  suffix: Mapping
+  components:
+  - type: Sprite
+    sprite: _Misfits/N14/Objects/Vehicles/vertibird_vaulttec.rsi
+    state: vertibird_vaulttec

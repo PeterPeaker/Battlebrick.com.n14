@@ -1,0 +1,31 @@
+﻿- type: entityLootTable
+  id: WildKokoaAll
+  entries:
+    - id: MisfitsWastelandFloraWildKokoa
+      prob: 0.75
+      amount: 1
+      maxAmount: 3
+
+- type: entityLootTable
+  id: WildKokoaClippers
+  entries:
+    - id: MisfitsKokoaSeeds
+      prob: 1
+      amount: 1
+      maxAmount: 1
+
+- type: entityLootTable
+  id: WildZoyAll
+  entries:
+  - id: MisfitsFloraProduceWildZoybeans
+    prob: 0.75
+    amount: 1
+    maxAmount: 3
+
+- type: entityLootTable
+  id: WildZoyClippers
+  entries:
+  - id: ZoybeanSeeds
+    prob: 1
+    amount: 1
+    maxAmount: 1
