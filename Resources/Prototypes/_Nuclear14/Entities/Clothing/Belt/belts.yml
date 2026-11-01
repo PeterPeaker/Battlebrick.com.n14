@@ -270,6 +270,11 @@
   name: rope belt
   description: A handmade belt with a rope, not the best but at least works.
   components:
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 2
   - type: Sprite
     sprite: _Nuclear14/Clothing/Belt/ropebelt.rsi
   - type: Clothing

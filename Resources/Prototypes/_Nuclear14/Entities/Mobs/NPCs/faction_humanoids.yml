@@ -417,13 +417,15 @@
     - type: NpcFactionMember
       friendlyOrderable: true
       factions:
-      - CaravanCompanySecureArea
+      - Netural
+      - Wastelander
+    - type: NPCRetaliation # Aggro on the attacker when damaged from any range
     - type: Gun
       minAngle: 4
       maxAngle: 20
       angleIncrease: 4
       angleDecay: 16
-      fireRate: 4.3
+      fireRate: 4.5
       soundGunshot:
         collection: N14Pistol9mmGunshot
       useKey: false
@@ -435,7 +437,7 @@
       capacity: 31
       count: 31
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 2
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/_Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
     - type: Loadout
